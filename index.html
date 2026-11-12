@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>WebGL2 Deferred Light Lab</title><link rel="stylesheet" href="styles.css"/></head>
+<body><header><h1>WebGL2 Deferred Light Lab</h1><p id="status">boot</p></header>
+<main><canvas id="gl" width="640" height="480"></canvas>
+<aside id="controls">
+<label>Exposure <input data-key="exposure" type="range" min="0.2" max="3" step="0.01" value="1"/></label>
+<label>Light Intensity <input data-key="intensity" type="range" min="0" max="5" step="0.01" value="1.5"/></label>
+<button id="btn-capture" type="button">Capture PNG</button>
+<pre id="stats"></pre></aside></main>
+<script type="module" src="src/main.js"></script></body></html>
